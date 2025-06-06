@@ -1,0 +1,378 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi", "Hello", "Hey there", "Good morning", "Good evening",
+          "How are you", "What's up", "Yo", "Greetings", "Hi doc",
+          "Hello doctor", "Hey bot", "Hi there", "Good day", "Sup"
+        ],
+        "responses": [
+          "Hello! I'm your healthcare assistant. How can I help you today?",
+          "Hi! Ready to assist with your health questions.",
+          "Hey there! What's on your mind?",
+          "Good to see you! How can I support your health needs?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye", "Goodbye", "See you", "Take care", "Later",
+          "Catch you later", "Farewell", "Adios", "I'm off",
+          "Gotta go", "Bye bye", "See ya", "Peace out",
+          "Thanks and bye", "Leaving now"
+        ],
+        "responses": [
+          "Goodbye! Stay healthy!",
+          "Take care and see you soon!",
+          "Bye! Reach out if you need me.",
+          "Later! Keep well."
+        ]
+      },
+      {
+        "tag": "fever",
+        "patterns": [
+          "I have a fever", "I'm feeling hot", "My temperature is high",
+          "I feel feverish", "Running a fever", "Body feels warm",
+          "I have chills", "Feeling sweaty", "High temp",
+          "I'm burning up", "Fever and chills", "Temperature rising",
+          "Hot and cold flashes", "I feel warm", "Shivering with fever"
+        ],
+        "responses": [
+          "Rest, stay hydrated, and consider acetaminophen. If fever exceeds 100.4°F or persists, consult a doctor.",
+          "A fever can indicate infection. Monitor your temperature and rest. See a doctor if it lasts over 48 hours.",
+          "Stay hydrated and avoid heavy clothing. If symptoms worsen, seek medical advice."
+        ]
+      },
+      {
+        "tag": "headache",
+        "patterns": [
+          "I have a headache", "My head hurts", "Pain in my head",
+          "Head is pounding", "Throbbing headache", "Migraine pain",
+          "Head feels heavy", "Skull pain", "Achy head",
+          "Headache all day", "Pain behind eyes", "Forehead pain",
+          "Splitting headache", "Head throbbing", "Constant head pain"
+        ],
+        "responses": [
+          "Try resting in a quiet, dark room and drink water. Over-the-counter pain relievers like ibuprofen may help. Consult a doctor if it persists.",
+          "Headaches can be caused by stress or dehydration. Rest and hydrate. See a doctor for severe or frequent headaches.",
+          "Avoid bright lights and loud noises. If the headache lasts over 24 hours, seek medical advice."
+        ]
+      },
+      {
+        "tag": "cough",
+        "patterns": [
+          "I have a cough", "Coughing a lot", "Dry cough",
+          "Wet cough", "Persistent cough", "Cough won't stop",
+          "Hacking cough", "Coughing up phlegm", "Throat tickle",
+          "Cough at night", "Ongoing cough", "Chest cough",
+          "Coughing fits", "Sore throat cough", "Bad cough"
+        ],
+        "responses": [
+          "Stay hydrated and try honey or cough drops. If the cough lasts over a week or includes fever, see a doctor.",
+          "A cough can be viral or allergic. Use a humidifier and rest. Consult a doctor if it persists.",
+          "Avoid irritants like smoke. If coughing disrupts sleep or worsens, seek medical advice."
+        ]
+      },
+      {
+        "tag": "sore_throat",
+        "patterns": [
+          "Sore throat", "Throat hurts", "Pain when swallowing",
+          "Scratchy throat", "Throat is raw", "Burning throat",
+          "Throat irritation", "Difficulty swallowing", "Throat ache",
+          "Sore and itchy throat", "Throat pain", "Hoarse voice",
+          "Throat feels tight", "Painful throat", "Swollen throat"
+        ],
+        "responses": [
+          "Gargle warm salt water and stay hydrated. If it persists or worsens, see a doctor.",
+          "Sore throats can be viral or bacterial. Rest and drink warm fluids. Consult a doctor if fever occurs.",
+          "Avoid spicy foods. If swallowing is very painful, seek medical advice."
+        ]
+      },
+      {
+        "tag": "stomach_pain",
+        "patterns": [
+          "Stomach hurts", "Belly pain", "Abdominal pain",
+          "Stomach ache", "Gut pain", "Cramps in stomach",
+          "Tummy hurts", "Pain in abdomen", "Stomach cramping",
+          "Bloating and pain", "Sharp stomach pain", "Achy belly",
+          "Stomach discomfort", "Lower abdomen pain", "Upset stomach"
+        ],
+        "responses": [
+          "Rest and avoid heavy meals. Over-the-counter antacids may help. If pain is severe or persistent, see a doctor.",
+          "Stomach pain can be due to gas, infection, or diet. Stay hydrated and eat bland foods. Consult a doctor if it worsens.",
+          "Avoid fatty foods. If accompanied by fever or vomiting, seek medical advice."
+        ]
+      },
+      {
+        "tag": "allergy",
+        "patterns": [
+          "I have allergies", "Sneezing a lot", "Itchy eyes",
+          "Runny nose", "Allergic reaction", "Hives on skin",
+          "Watery eyes", "Nose itching", "Allergy symptoms",
+          "Sneezing and coughing", "Skin rash", "Breathing issues",
+          "Allergy flare-up", "Itchy throat", "Swollen eyes"
+        ],
+        "responses": [
+          "Try antihistamines and avoid allergens like pollen. If symptoms are severe, consult a doctor.",
+          "Allergies can be triggered by dust or pets. Stay indoors during high pollen days. See a doctor if breathing is affected.",
+          "Shower after outdoor exposure. If symptoms persist, seek medical advice."
+        ]
+      },
+      {
+        "tag": "general_advice",
+        "patterns": [
+          "Health tips", "Stay healthy", "How to be healthy",
+          "Healthy lifestyle", "Wellness advice", "Health advice",
+          "Tips for health", "Good health habits", "Healthy living",
+          "Improve health", "Daily health tips", "Wellness tips",
+          "Health suggestions", "Stay fit", "Better health"
+        ],
+        "responses": [
+          "Eat balanced meals, exercise regularly, stay hydrated, and get 7-8 hours of sleep.",
+          "Incorporate fruits, vegetables, and whole grains into your diet. Avoid smoking and limit alcohol.",
+          "Stay active with at least 30 minutes of exercise daily and manage stress with relaxation techniques."
+        ]
+      },
+      {
+        "tag": "emergency",
+        "patterns": [
+          "Emergency", "Urgent help", "Medical emergency",
+          "I need help now", "Severe pain", "Can't breathe",
+          "Chest pain", "Bleeding a lot", "Fainting",
+          "Heart attack", "Stroke symptoms", "Unconscious",
+          "Severe injury", "Critical condition", "Call ambulance"
+        ],
+        "responses": [
+          "This sounds serious. Call emergency services or visit the nearest hospital immediately.",
+          "Please contact 911 or your local emergency number now. Do not delay.",
+          "Seek immediate medical attention. Call for help or go to an emergency room."
+        ]
+      },
+      {
+        "tag": "back_pain",
+        "patterns": [
+          "Back hurts", "Lower back pain", "Upper back pain",
+          "Back ache", "Spine pain", "Back stiffness",
+          "Pain in back", "Sore back", "Back discomfort",
+          "Chronic back pain", "Back muscle pain", "Sharp back pain",
+          "Back spasms", "Achy spine", "Back injury"
+        ],
+        "responses": [
+          "Rest and avoid heavy lifting. Try gentle stretching or over-the-counter pain relievers. See a doctor if pain persists.",
+          "Back pain can be due to posture or strain. Use a supportive chair and avoid slouching. Consult a doctor if severe.",
+          "Apply a warm compress. If pain radiates or lasts over a week, seek medical advice."
+        ]
+      },
+      {
+        "tag": "fatigue",
+        "patterns": [
+          "I'm tired", "Feeling exhausted", "Always fatigued",
+          "No energy", "Extreme tiredness", "Worn out",
+          "Constant fatigue", "Low energy", "Feeling drained",
+          "Tired all the time", "Weak and tired", "Sleepy all day",
+          "Fatigue issues", "Energy crash", "Burnout feeling"
+        ],
+        "responses": [
+          "Ensure 7-8 hours of sleep and eat a balanced diet. If fatigue persists, consult a doctor to check for underlying issues.",
+          "Fatigue can be due to stress or anemia. Stay hydrated and rest. See a doctor if it continues.",
+          "Limit caffeine and exercise lightly. Persistent fatigue warrants medical evaluation."
+        ]
+      },
+      {
+        "tag": "nausea",
+        "patterns": [
+          "I feel nauseous", "Nausea", "Stomach feels sick",
+          "Want to vomit", "Queasy feeling", "Nauseated",
+          "Upset stomach", "Feeling like throwing up", "Sick to stomach",
+          "Nausea and dizziness", "Vomiting urge", "Stomach unease",
+          "Nauseous all day", "Gagging feeling", "Bile rising"
+        ],
+        "responses": [
+          "Sip water or ginger tea and avoid heavy foods. If nausea persists or includes vomiting, see a doctor.",
+          "Nausea can be due to food, motion, or illness. Rest and eat bland foods. Consult a doctor if severe.",
+          "Avoid strong smells. If nausea lasts over 24 hours, seek medical advice."
+        ]
+      },
+      {
+        "tag": "dizziness",
+        "patterns": [
+          "I'm dizzy", "Feeling lightheaded", "Room spinning",
+          "Dizzy spells", "Vertigo", "Loss of balance",
+          "Head spinning", "Faint feeling", "Dizziness issues",
+          "Unsteady on feet", "Spinning sensation", "Lightheadedness",
+          "Dizzy when standing", "Balance problems", "Woozy feeling"
+        ],
+        "responses": [
+          "Sit or lie down and hydrate. If dizziness persists or includes fainting, see a doctor.",
+          "Dizziness can be due to dehydration or low blood pressure. Rest and drink water. Consult a doctor if frequent.",
+          "Avoid sudden movements. If accompanied by nausea or vision changes, seek medical advice."
+        ]
+      },
+      {
+        "tag": "chest_pain",
+        "patterns": [
+          "Chest hurts", "Chest pain", "Pain in chest",
+          "Tight chest", "Chest discomfort", "Heart pain",
+          "Chest pressure", "Achy chest", "Sharp chest pain",
+          "Chest burning", "Pain near heart", "Chest squeezing",
+          "Heavy chest", "Chest stabbing pain", "Heart area pain"
+        ],
+        "responses": [
+          "Chest pain can be serious. Seek immediate medical attention or call emergency services.",
+          "Do not ignore chest pain. Contact a doctor or visit an emergency room now.",
+          "Call 911 or your local emergency number immediately for chest pain."
+        ]
+      },
+      {
+        "tag": "shortness_of_breath",
+        "patterns": [
+          "Can't breathe", "Short of breath", "Breathing difficulty",
+          "Out of breath", "Gasping for air", "Hard to breathe",
+          "Breathlessness", "Lung pain", "Breathing issues",
+          "Wheezing", "Tight lungs", "Struggling to breathe",
+          "No air", "Panting", "Breath shortage"
+        ],
+        "responses": [
+          "This could be serious. Sit upright and try to stay calm. Call emergency services or see a doctor immediately.",
+          "Shortness of breath needs urgent attention. Contact a doctor or visit an emergency room now.",
+          "Seek medical help immediately for breathing difficulties."
+        ]
+      },
+      {
+        "tag": "diarrhea",
+        "patterns": [
+          "I have diarrhea", "Loose stools", "Frequent bowel movements",
+          "Runny stools", "Watery poop", "Diarrhea issues",
+          "Stomach running", "Constant bathroom trips", "Liquid stools",
+          "Diarrhea and cramps", "Bowel issues", "Upset bowels",
+          "Diarrhea all day", "Stool problems", "Gut issues"
+        ],
+        "responses": [
+          "Stay hydrated with water or electrolyte drinks. Eat bland foods like rice. If diarrhea lasts over 48 hours, see a doctor.",
+          "Diarrhea can be due to infection or diet. Avoid dairy and fatty foods. Consult a doctor if severe.",
+          "Rest and hydrate. If accompanied by fever or blood in stool, seek medical advice."
+        ]
+      },
+      {
+        "tag": "constipation",
+        "patterns": [
+          "I'm constipated", "Can't poop", "Hard stools",
+          "Constipation", "Bowel issues", "No bowel movement",
+          "Stuck bowels", "Painful poop", "Straining to poop",
+          "Constipation pain", "Blocked bowels", "Hard to pass stool",
+          "Infrequent stools", "Bowel blockage", "Stool difficulty"
+        ],
+        "responses": [
+          "Eat high-fiber foods like fruits and vegetables, drink water, and try prunes. If constipation lasts over a week, see a doctor.",
+          "Constipation can be due to low fiber or dehydration. Exercise lightly and hydrate. Consult a doctor if severe.",
+          "Avoid processed foods. If you have pain or no movement for days, seek medical advice."
+        ]
+      },
+      {
+        "tag": "joint_pain",
+        "patterns": [
+          "Joint pain", "Achy joints", "Knee pain",
+          "Shoulder pain", "Joint stiffness", "Sore joints",
+          "Pain in joints", "Arthritis symptoms", "Joint discomfort",
+          "Elbow pain", "Wrist pain", "Hip pain",
+          "Joint swelling", "Stiff knees", "Achy hips"
+        ],
+        "responses": [
+          "Rest the joint and try over-the-counter pain relievers. If pain or swelling persists, see a doctor.",
+          "Joint pain can be due to overuse or arthritis. Avoid repetitive strain. Consult a doctor if chronic.",
+          "Apply a warm or cold compress. If joint pain limits movement, seek medical advice."
+        ]
+      },
+      {
+        "tag": "skin_rash",
+        "patterns": [
+          "I have a rash", "Skin rash", "Itchy skin",
+          "Red spots on skin", "Skin irritation", "Bumpy skin",
+          "Rash on arm", "Skin redness", "Hives",
+          "Skin breakout", "Itchy red skin", "Rash spreading",
+          "Skin patches", "Allergic rash", "Burning rash"
+        ],
+        "responses": [
+          "Avoid scratching and use a gentle moisturizer. Try antihistamines for itching. If the rash spreads or worsens, see a doctor.",
+          "Rashes can be allergic or infectious. Keep the area clean and dry. Consult a doctor if it persists.",
+          "Avoid harsh soaps. If the rash is painful or has blisters, seek medical advice."
+        ]
+      },
+      {
+        "tag": "insomnia",
+        "patterns": [
+          "Can't sleep", "Insomnia", "Trouble sleeping",
+          "Awake at night", "No sleep", "Restless nights",
+          "Sleep issues", "Not sleeping well", "Up all night",
+          "Difficulty falling asleep", "Sleepless", "Bad sleep",
+          "No rest", "Sleep problems", "Nighttime awake"
+        ],
+        "responses": [
+          "Avoid screens before bed and try a relaxing routine. If insomnia persists, consult a doctor.",
+          "Insomnia can be due to stress or caffeine. Keep a regular sleep schedule. See a doctor if chronic.",
+          "Try deep breathing or meditation. If you’re awake for hours nightly, seek medical advice."
+        ]
+      },
+      {
+        "tag": "anxiety",
+        "patterns": [
+          "I'm anxious", "Feeling nervous", "Anxiety issues",
+          "Heart racing", "Panicky feeling", "Nervous all the time",
+          "Worried a lot", "Anxiety attacks", "Feeling tense",
+          "Overwhelmed", "Restless mind", "Anxious thoughts",
+          "Panic symptoms", "Nervous energy", "Fearful feeling"
+        ],
+        "responses": [
+          "Try deep breathing or mindfulness exercises. If anxiety is frequent, consult a healthcare professional.",
+          "Anxiety can be managed with relaxation techniques. Reach out to a counselor if it impacts daily life.",
+          "Practice grounding techniques like focusing on your senses. Seek help if anxiety persists."
+        ]
+      },
+      {
+        "tag": "depression",
+        "patterns": [
+          "I'm depressed", "Feeling sad", "Low mood",
+          "No motivation", "Hopeless feeling", "Always down",
+          "Sad all the time", "No interest", "Feeling empty",
+          "Depression symptoms", "Lost joy", "Gloomy mood",
+          "No energy for life", "Feeling worthless", "Dark thoughts"
+        ],
+        "responses": [
+          "It’s okay to feel this way sometimes. Reach out to a trusted person or professional for support.",
+          "Depression can be tough. Consider talking to a counselor or doctor for guidance.",
+          "Try small activities like walking. If sadness persists, seek professional help."
+        ]
+      },
+      {
+        "tag": "flu",
+        "patterns": [
+          "I have the flu", "Flu symptoms", "Feeling fluish",
+          "Body aches and fever", "Flu and cough", "Chills and fever",
+          "Flu-like symptoms", "Sore throat and fever", "Runny nose and aches",
+          "Flu and fatigue", "Influenza symptoms", "Fever and cough",
+          "Flu and headache", "Sick with flu", "Flu and nausea"
+        ],
+        "responses": [
+          "Rest, stay hydrated, and consider over-the-counter flu remedies. If symptoms last over a week, see a doctor.",
+          "Flu can cause fever and aches. Stay home to avoid spreading it. Consult a doctor if breathing is affected.",
+          "Eat light foods and rest. If high fever or severe symptoms occur, seek medical advice."
+        ]
+      },
+      {
+        "tag": "cold",
+        "patterns": [
+          "I have a cold", "Cold symptoms", "Runny nose",
+          "Stuffy nose", "Sneezing and cough", "Cold and sore throat",
+          "Nasal congestion", "Feeling congested", "Cold and fatigue",
+          "Watery eyes and sneezing", "Common cold", "Cold and headache",
+          "Sick with cold", "Nose blocked", "Cold and cough"
+        ],
+        "responses": [
+          "Rest, drink fluids, and try over-the-counter cold remedies. If symptoms persist over 10 days, see a doctor.",
+          "A cold is usually viral. Use a humidifier and stay hydrated. Consult a doctor if fever develops.",
+          "Avoid contact with others to prevent spreading. If symptoms worsen, seek medical advice."
+        ]
+      }
+    ]
+  }
